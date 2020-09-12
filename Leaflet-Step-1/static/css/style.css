@@ -7,4 +7,24 @@ body {
 body,
 html {
   height: 100%;
+  text-align: center;
+}
+
+.legendInfo {
+  text-align:left;
+  background: white;
+  padding: 5px 10px 5px 10px;
+  border-radius:2px;
+  height:130px;
+}
+
+.legendInfo i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position:relative;
+  top:5px
+}
+.legendItem {
+  position:relative;
 }
