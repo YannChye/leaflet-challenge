@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Leaflet Step-1</title>
+  <title>Leaflet Step-2</title>
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
@@ -13,15 +13,22 @@
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
 <body>
-
+  <div class="header">
+    <h1>All Earthquakes from the Past 7 days alongside tectonic fault lines</h1>
+    <p>source - <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php" target="_blank">United States Geological Survey (USGS) Earthquake Data</a></p>
+    <p>source - <a href="https://github.com/fraxen/tectonicplates" target="_blank">Tectonic Plates Data</a></p>
+  </div>
   <!-- The div that holds our map -->
   <div id="map"></div>
 
   <!-- Leaflet JavaScript -->
-  <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+  integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+  crossorigin=""></script>
   <!-- D3 JavaScript -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
   <!-- Our JavaScript -->
-  <script type="text/javascript" src="static/js/logic.js"></script>
+  <script type="text/javascript" src="./static/js/config.js"></script>
+  <script type="text/javascript" src="./static/js/logic.js"></script>
 </body>
 </html>
